@@ -1,0 +1,189 @@
+.fimg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+
+}
+
+.fundo-trasparente {
+  width: auto;
+  height: 400px;
+
+
+}
+
+.fundo-trasparente h1 {
+  color: rgb(241, 241, 241);
+  text-align: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  margin-top: 50px;
+  font-size: 2.5em;
+
+
+}
+
+.container-conteudo {
+  height: 500px;
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.conteudo-texto {
+  width: 100%;
+  background-color: #131010;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.conteudo-texto h1 {
+  color: aliceblue;
+}
+
+.container-bolinhas {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.bolinhas {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.bolinhas img {
+  height: 90px;
+  width: auto;
+}
+
+.bolinhas h1 {
+  font-size: 1em;
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.bolinhas a {
+  font-size: 1em;
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.bola1,
+.bola2,
+.bola3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(202, 0, 0);
+  border-radius: 10%;
+  border: 1px #1b1a1a;
+  height: 150px;
+  width: 300px;
+}
+
+.bola1:hover {
+
+  background-color: rgb(139, 1, 1);
+  transition: 0.5s;
+}
+
+.bola2:hover {
+
+  background-color: rgb(139, 1, 1);
+  transition: 0.5s;
+}
+
+.bola3:hover {
+
+  background-color: rgb(139, 1, 1);
+  transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  .fundo-trasparente {
+    height: 200px;
+    display: none;
+
+  }
+
+  @media (max-width: 768px) {
+    .container-conteudo {
+      height: 200px;
+
+    }
+
+    .fimg {
+      display: none;
+    }
+
+    .container-conteudo h1 {
+      font-size: 1em;
+      margin-left: 13%;
+    }
+
+    .container-conteudo a {
+      font-size: 1em;
+      margin: 3px;
+    }
+
+    .container-bolinhas {
+      margin-top: -5px;
+    }
+
+    .bolinhas h1 {
+
+      color: rgb(3, 3, 3);
+
+    }
+
+   .bolinhas {
+      width: 100%;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .bolinhas img {
+      height: 50px;
+      width: auto;
+    }
+
+    .bola1,
+    .bola2,
+    .bola3 {
+      height: 70px;
+      width: 100px;
+      border-radius: 10%;
+    }
+
+    .bola1:hover {
+
+      background-color: rgb(139, 1, 1);
+      transition: 0.5s;
+    }
+
+    .bola2:hover {
+
+      background-color: rgb(139, 1, 1);
+      transition: 0.5s;
+    }
+
+    .bola3:hover {
+
+      background-color: rgb(139, 1, 1);
+      transition: 0.5s;
+    }
