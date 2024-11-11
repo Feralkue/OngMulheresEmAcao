@@ -1,4 +1,3 @@
-/*nav*/
 class MobileNavbar {
     constructor(mobileMenu, navList, navLinks) {
       this.mobileMenu = document.querySelector(mobileMenu);
@@ -43,44 +42,3 @@ class MobileNavbar {
     ".nav-list li",
   );
   mobileNavbar.init();
-
-/*carrossel*/
-  var radio = document.querySelector('.manual-btn')
-var cont = 1
-
-document.getElementById('radio1').checked = true
-
-setInterval(() => {
-    proximaImg()
-}, 5000)
-
-function proximaImg(){
-    cont++
-
-    if(cont > 3){
-        cont = 1 
-    }
-
-    document.getElementById('radio'+cont).checked = true
-}
-
-
-
-const counters = document.querySelectorAll('.counter');
-
-counters.forEach(counter => {
-  const updateCount = () => {
-    const target = +counter.getAttribute('data-target');
-    const count = +counter.innerText;
-    const increment = target / 200;
-
-    if (count < target) {
-      counter.innerText = Math.ceil(count + increment);
-      setTimeout(updateCount, 10);
-    } else {
-      counter.innerText = target.toLocaleString('pt-BR');
-    }
-  };
-
-  updateCount();
-});
